@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D20E683D1FC1686400BA366F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E683C1FC1686400BA366F /* AppDelegate.swift */; };
+		D20E683F1FC1686400BA366F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E683E1FC1686400BA366F /* ViewController.swift */; };
+		D20E68421FC1686400BA366F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E68401FC1686400BA366F /* Main.storyboard */; };
+		D20E68441FC1686400BA366F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20E68431FC1686400BA366F /* Assets.xcassets */; };
+		D20E68471FC1686400BA366F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E68451FC1686400BA366F /* LaunchScreen.storyboard */; };
+		D20E68521FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E68511FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift */; };
+		D20E685D1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E685C1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D20E684E1FC1686400BA366F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20E68311FC1686300BA366F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20E68381FC1686400BA366F;
+			remoteInfo = HachimantaiHotSpringAppSample;
+		};
+		D20E68591FC1686400BA366F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D20E68311FC1686300BA366F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D20E68381FC1686400BA366F;
+			remoteInfo = HachimantaiHotSpringAppSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D20E68391FC1686400BA366F /* HachimantaiHotSpringAppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HachimantaiHotSpringAppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20E683C1FC1686400BA366F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D20E683E1FC1686400BA366F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D20E68411FC1686400BA366F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D20E68431FC1686400BA366F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D20E68461FC1686400BA366F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D20E68481FC1686400BA366F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20E684D1FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HachimantaiHotSpringAppSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20E68511FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HachimantaiHotSpringAppSampleTests.swift; sourceTree = "<group>"; };
+		D20E68531FC1686400BA366F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20E68581FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HachimantaiHotSpringAppSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20E685C1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HachimantaiHotSpringAppSampleUITests.swift; sourceTree = "<group>"; };
+		D20E685E1FC1686400BA366F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D20E68361FC1686400BA366F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20E684A1FC1686400BA366F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20E68551FC1686400BA366F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D20E68301FC1686300BA366F = {
+			isa = PBXGroup;
+			children = (
+				D20E683B1FC1686400BA366F /* HachimantaiHotSpringAppSample */,
+				D20E68501FC1686400BA366F /* HachimantaiHotSpringAppSampleTests */,
+				D20E685B1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests */,
+				D20E683A1FC1686400BA366F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D20E683A1FC1686400BA366F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D20E68391FC1686400BA366F /* HachimantaiHotSpringAppSample.app */,
+				D20E684D1FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.xctest */,
+				D20E68581FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D20E683B1FC1686400BA366F /* HachimantaiHotSpringAppSample */ = {
+			isa = PBXGroup;
+			children = (
+				D20E683C1FC1686400BA366F /* AppDelegate.swift */,
+				D20E683E1FC1686400BA366F /* ViewController.swift */,
+				D20E68401FC1686400BA366F /* Main.storyboard */,
+				D20E68431FC1686400BA366F /* Assets.xcassets */,
+				D20E68451FC1686400BA366F /* LaunchScreen.storyboard */,
+				D20E68481FC1686400BA366F /* Info.plist */,
+			);
+			path = HachimantaiHotSpringAppSample;
+			sourceTree = "<group>";
+		};
+		D20E68501FC1686400BA366F /* HachimantaiHotSpringAppSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				D20E68511FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift */,
+				D20E68531FC1686400BA366F /* Info.plist */,
+			);
+			path = HachimantaiHotSpringAppSampleTests;
+			sourceTree = "<group>";
+		};
+		D20E685B1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D20E685C1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift */,
+				D20E685E1FC1686400BA366F /* Info.plist */,
+			);
+			path = HachimantaiHotSpringAppSampleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D20E68381FC1686400BA366F /* HachimantaiHotSpringAppSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20E68611FC1686400BA366F /* Build configuration list for PBXNativeTarget "HachimantaiHotSpringAppSample" */;
+			buildPhases = (
+				D20E68351FC1686400BA366F /* Sources */,
+				D20E68361FC1686400BA366F /* Frameworks */,
+				D20E68371FC1686400BA366F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HachimantaiHotSpringAppSample;
+			productName = HachimantaiHotSpringAppSample;
+			productReference = D20E68391FC1686400BA366F /* HachimantaiHotSpringAppSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D20E684C1FC1686400BA366F /* HachimantaiHotSpringAppSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20E68641FC1686400BA366F /* Build configuration list for PBXNativeTarget "HachimantaiHotSpringAppSampleTests" */;
+			buildPhases = (
+				D20E68491FC1686400BA366F /* Sources */,
+				D20E684A1FC1686400BA366F /* Frameworks */,
+				D20E684B1FC1686400BA366F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20E684F1FC1686400BA366F /* PBXTargetDependency */,
+			);
+			name = HachimantaiHotSpringAppSampleTests;
+			productName = HachimantaiHotSpringAppSampleTests;
+			productReference = D20E684D1FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D20E68571FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D20E68671FC1686400BA366F /* Build configuration list for PBXNativeTarget "HachimantaiHotSpringAppSampleUITests" */;
+			buildPhases = (
+				D20E68541FC1686400BA366F /* Sources */,
+				D20E68551FC1686400BA366F /* Frameworks */,
+				D20E68561FC1686400BA366F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D20E685A1FC1686400BA366F /* PBXTargetDependency */,
+			);
+			name = HachimantaiHotSpringAppSampleUITests;
+			productName = HachimantaiHotSpringAppSampleUITests;
+			productReference = D20E68581FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D20E68311FC1686300BA366F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "高橋知憲";
+				TargetAttributes = {
+					D20E68381FC1686400BA366F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D20E684C1FC1686400BA366F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D20E68381FC1686400BA366F;
+					};
+					D20E68571FC1686400BA366F = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D20E68381FC1686400BA366F;
+					};
+				};
+			};
+			buildConfigurationList = D20E68341FC1686300BA366F /* Build configuration list for PBXProject "HachimantaiHotSpringAppSample" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D20E68301FC1686300BA366F;
+			productRefGroup = D20E683A1FC1686400BA366F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D20E68381FC1686400BA366F /* HachimantaiHotSpringAppSample */,
+				D20E684C1FC1686400BA366F /* HachimantaiHotSpringAppSampleTests */,
+				D20E68571FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D20E68371FC1686400BA366F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20E68471FC1686400BA366F /* LaunchScreen.storyboard in Resources */,
+				D20E68441FC1686400BA366F /* Assets.xcassets in Resources */,
+				D20E68421FC1686400BA366F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20E684B1FC1686400BA366F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20E68561FC1686400BA366F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D20E68351FC1686400BA366F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20E683F1FC1686400BA366F /* ViewController.swift in Sources */,
+				D20E683D1FC1686400BA366F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20E68491FC1686400BA366F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20E68521FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D20E68541FC1686400BA366F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20E685D1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D20E684F1FC1686400BA366F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20E68381FC1686400BA366F /* HachimantaiHotSpringAppSample */;
+			targetProxy = D20E684E1FC1686400BA366F /* PBXContainerItemProxy */;
+		};
+		D20E685A1FC1686400BA366F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D20E68381FC1686400BA366F /* HachimantaiHotSpringAppSample */;
+			targetProxy = D20E68591FC1686400BA366F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D20E68401FC1686400BA366F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D20E68411FC1686400BA366F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D20E68451FC1686400BA366F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D20E68461FC1686400BA366F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D20E685F1FC1686400BA366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D20E68601FC1686400BA366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D20E68621FC1686400BA366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JWW8S5LM7;
+				INFOPLIST_FILE = HachimantaiHotSpringAppSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takahashi.HachimantaiHotSpringAppSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D20E68631FC1686400BA366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JWW8S5LM7;
+				INFOPLIST_FILE = HachimantaiHotSpringAppSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takahashi.HachimantaiHotSpringAppSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D20E68651FC1686400BA366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JWW8S5LM7;
+				INFOPLIST_FILE = HachimantaiHotSpringAppSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takahashi.HachimantaiHotSpringAppSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HachimantaiHotSpringAppSample.app/HachimantaiHotSpringAppSample";
+			};
+			name = Debug;
+		};
+		D20E68661FC1686400BA366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JWW8S5LM7;
+				INFOPLIST_FILE = HachimantaiHotSpringAppSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takahashi.HachimantaiHotSpringAppSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HachimantaiHotSpringAppSample.app/HachimantaiHotSpringAppSample";
+			};
+			name = Release;
+		};
+		D20E68681FC1686400BA366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JWW8S5LM7;
+				INFOPLIST_FILE = HachimantaiHotSpringAppSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takahashi.HachimantaiHotSpringAppSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HachimantaiHotSpringAppSample;
+			};
+			name = Debug;
+		};
+		D20E68691FC1686400BA366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9JWW8S5LM7;
+				INFOPLIST_FILE = HachimantaiHotSpringAppSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.takahashi.HachimantaiHotSpringAppSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HachimantaiHotSpringAppSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D20E68341FC1686300BA366F /* Build configuration list for PBXProject "HachimantaiHotSpringAppSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20E685F1FC1686400BA366F /* Debug */,
+				D20E68601FC1686400BA366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20E68611FC1686400BA366F /* Build configuration list for PBXNativeTarget "HachimantaiHotSpringAppSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20E68621FC1686400BA366F /* Debug */,
+				D20E68631FC1686400BA366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20E68641FC1686400BA366F /* Build configuration list for PBXNativeTarget "HachimantaiHotSpringAppSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20E68651FC1686400BA366F /* Debug */,
+				D20E68661FC1686400BA366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D20E68671FC1686400BA366F /* Build configuration list for PBXNativeTarget "HachimantaiHotSpringAppSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D20E68681FC1686400BA366F /* Debug */,
+				D20E68691FC1686400BA366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D20E68311FC1686300BA366F /* Project object */;
+}
