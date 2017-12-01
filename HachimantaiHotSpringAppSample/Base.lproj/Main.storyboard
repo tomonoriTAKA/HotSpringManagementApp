@@ -20,26 +20,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCq-JA-b6R">
-                                <rect key="frame" x="10" y="155.5" width="355" height="355"/>
+                                <rect key="frame" x="20" y="166" width="335" height="335"/>
                                 <color key="backgroundColor" red="0.94634553040000002" green="0.70025119199999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="10Z-wk-oyB"/>
                                     <constraint firstAttribute="width" secondItem="xCq-JA-b6R" secondAttribute="height" multiplier="1:1" id="Jh6-oe-sBt"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pr9-XR-MpY">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0J9-9l-gKs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="mzr-yU-mY0" firstAttribute="trailing" secondItem="xCq-JA-b6R" secondAttribute="trailing" constant="10" id="9ki-TJ-udL"/>
+                            <constraint firstItem="pr9-XR-MpY" firstAttribute="leading" secondItem="mzr-yU-mY0" secondAttribute="leading" constant="20" id="5fY-ks-WzC"/>
+                            <constraint firstItem="mzr-yU-mY0" firstAttribute="trailing" secondItem="xCq-JA-b6R" secondAttribute="trailing" constant="20" id="9ki-TJ-udL"/>
                             <constraint firstItem="xCq-JA-b6R" firstAttribute="centerX" secondItem="ISQ-Pa-jlr" secondAttribute="centerX" id="F9J-rH-tD5"/>
-                            <constraint firstItem="xCq-JA-b6R" firstAttribute="leading" secondItem="mzr-yU-mY0" secondAttribute="leading" constant="10" id="S74-C5-LLu"/>
+                            <constraint firstItem="xCq-JA-b6R" firstAttribute="leading" secondItem="mzr-yU-mY0" secondAttribute="leading" constant="20" id="S74-C5-LLu"/>
+                            <constraint firstItem="mzr-yU-mY0" firstAttribute="bottom" secondItem="pr9-XR-MpY" secondAttribute="bottom" constant="20" id="V2s-5b-2B4"/>
+                            <constraint firstItem="pr9-XR-MpY" firstAttribute="top" relation="greaterThanOrEqual" secondItem="xCq-JA-b6R" secondAttribute="bottom" constant="20" id="oTb-iC-kAN"/>
                             <constraint firstItem="xCq-JA-b6R" firstAttribute="centerY" secondItem="ISQ-Pa-jlr" secondAttribute="centerY" id="rwn-2H-qfZ"/>
+                            <constraint firstItem="mzr-yU-mY0" firstAttribute="trailing" secondItem="pr9-XR-MpY" secondAttribute="trailing" constant="20" id="y9X-Xx-rC6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mzr-yU-mY0"/>
                     </view>
                     <navigationItem key="navigationItem" id="ud0-Yq-Pzd"/>
                     <connections>
                         <outlet property="previewView" destination="xCq-JA-b6R" id="8BQ-ID-tjI"/>
+                        <outlet property="resultLabel" destination="pr9-XR-MpY" id="KsO-vS-J81"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eO-P4-ivv" userLabel="First Responder" sceneMemberID="firstResponder"/>

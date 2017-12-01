@@ -14,7 +14,8 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     var checkValue:String = ""
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
-    var audioPlayer: AVAudioPlayer!
+    var audioPlayer: AVAudioPlayer = AVAudioPlayer()
+    @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -117,6 +118,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                 AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
                 audioPlayer.play()
                 found(code: stringValue)
+                resultLabel.text = stringValue
             }
             
         }
@@ -132,7 +134,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     func setupSE() {
         if let path = Bundle.main.path(forResource: "se_maoudamashii_system23", ofType: ".mp3") {
             let url = URL(fileURLWithPath: path)
-            audioPlayer = try! AVAudioPlayer.init(contentsOf: url)
+            audioPlayer = try! AVAudioPlayer(contentsOf: url)
             audioPlayer.prepareToPlay()
         }
         
