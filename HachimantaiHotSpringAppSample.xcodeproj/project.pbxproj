@@ -14,8 +14,8 @@
 		D20E68521FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E68511FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift */; };
 		D20E685D1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E685C1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift */; };
 		D20E686B1FC1696000BA366F /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E686A1FC1696000BA366F /* QRCodeViewController.swift */; };
-		D232C5271FD0F199005E0FDC /* se_maoudamashii_system27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D232C5251FD0F199005E0FDC /* se_maoudamashii_system27.mp3 */; };
-		D232C5281FD0F199005E0FDC /* se_maoudamashii_system23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D232C5261FD0F199005E0FDC /* se_maoudamashii_system23.mp3 */; };
+		D232C5271FD0F199005E0FDC /* system2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D232C5251FD0F199005E0FDC /* system2.mp3 */; };
+		D232C5281FD0F199005E0FDC /* system1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D232C5261FD0F199005E0FDC /* system1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,8 @@
 		D20E685C1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HachimantaiHotSpringAppSampleUITests.swift; sourceTree = "<group>"; };
 		D20E685E1FC1686400BA366F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20E686A1FC1696000BA366F /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
-		D232C5251FD0F199005E0FDC /* se_maoudamashii_system27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_system27.mp3; sourceTree = "<group>"; };
-		D232C5261FD0F199005E0FDC /* se_maoudamashii_system23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_system23.mp3; sourceTree = "<group>"; };
+		D232C5251FD0F199005E0FDC /* system2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = system2.mp3; sourceTree = "<group>"; };
+		D232C5261FD0F199005E0FDC /* system1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = system1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,8 +133,8 @@
 		D232C5241FD0F144005E0FDC /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				D232C5261FD0F199005E0FDC /* se_maoudamashii_system23.mp3 */,
-				D232C5251FD0F199005E0FDC /* se_maoudamashii_system27.mp3 */,
+				D232C5261FD0F199005E0FDC /* system1.mp3 */,
+				D232C5251FD0F199005E0FDC /* system2.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -246,9 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D232C5271FD0F199005E0FDC /* se_maoudamashii_system27.mp3 in Resources */,
+				D232C5271FD0F199005E0FDC /* system2.mp3 in Resources */,
 				D20E68471FC1686400BA366F /* LaunchScreen.storyboard in Resources */,
-				D232C5281FD0F199005E0FDC /* se_maoudamashii_system23.mp3 in Resources */,
+				D232C5281FD0F199005E0FDC /* system1.mp3 in Resources */,
 				D20E68441FC1686400BA366F /* Assets.xcassets in Resources */,
 				D20E68421FC1686400BA366F /* Main.storyboard in Resources */,
 			);

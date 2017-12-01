@@ -132,7 +132,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     
     //AVAudioPlayerに音楽ファイルを読み込ませるメソッド
     func setupSE() {
-        if let path = Bundle.main.path(forResource: "se_maoudamashii_system23", ofType: ".mp3") {
+        if let path = Bundle.main.path(forResource: "system1", ofType: ".mp3") {
             let url = URL(fileURLWithPath: path)
             audioPlayer = try! AVAudioPlayer(contentsOf: url)
             audioPlayer.prepareToPlay()
