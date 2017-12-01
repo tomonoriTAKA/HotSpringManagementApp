@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D20E683D1FC1686400BA366F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E683C1FC1686400BA366F /* AppDelegate.swift */; };
-		D20E683F1FC1686400BA366F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E683E1FC1686400BA366F /* ViewController.swift */; };
 		D20E68421FC1686400BA366F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E68401FC1686400BA366F /* Main.storyboard */; };
 		D20E68441FC1686400BA366F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20E68431FC1686400BA366F /* Assets.xcassets */; };
 		D20E68471FC1686400BA366F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E68451FC1686400BA366F /* LaunchScreen.storyboard */; };
 		D20E68521FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E68511FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift */; };
 		D20E685D1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E685C1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift */; };
+		D20E686B1FC1696000BA366F /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E686A1FC1696000BA366F /* QRCodeViewController.swift */; };
+		D232C5271FD0F199005E0FDC /* se_maoudamashii_system27.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D232C5251FD0F199005E0FDC /* se_maoudamashii_system27.mp3 */; };
+		D232C5281FD0F199005E0FDC /* se_maoudamashii_system23.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D232C5261FD0F199005E0FDC /* se_maoudamashii_system23.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		D20E68391FC1686400BA366F /* HachimantaiHotSpringAppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HachimantaiHotSpringAppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E683C1FC1686400BA366F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D20E683E1FC1686400BA366F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D20E68411FC1686400BA366F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D20E68431FC1686400BA366F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D20E68461FC1686400BA366F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		D20E68581FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HachimantaiHotSpringAppSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E685C1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HachimantaiHotSpringAppSampleUITests.swift; sourceTree = "<group>"; };
 		D20E685E1FC1686400BA366F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D20E686A1FC1696000BA366F /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		D232C5251FD0F199005E0FDC /* se_maoudamashii_system27.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_system27.mp3; sourceTree = "<group>"; };
+		D232C5261FD0F199005E0FDC /* se_maoudamashii_system23.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = se_maoudamashii_system23.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,9 @@
 		D20E683B1FC1686400BA366F /* HachimantaiHotSpringAppSample */ = {
 			isa = PBXGroup;
 			children = (
+				D232C5241FD0F144005E0FDC /* Sound */,
 				D20E683C1FC1686400BA366F /* AppDelegate.swift */,
-				D20E683E1FC1686400BA366F /* ViewController.swift */,
+				D20E686A1FC1696000BA366F /* QRCodeViewController.swift */,
 				D20E68401FC1686400BA366F /* Main.storyboard */,
 				D20E68431FC1686400BA366F /* Assets.xcassets */,
 				D20E68451FC1686400BA366F /* LaunchScreen.storyboard */,
@@ -123,6 +128,15 @@
 				D20E685E1FC1686400BA366F /* Info.plist */,
 			);
 			path = HachimantaiHotSpringAppSampleUITests;
+			sourceTree = "<group>";
+		};
+		D232C5241FD0F144005E0FDC /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				D232C5261FD0F199005E0FDC /* se_maoudamashii_system23.mp3 */,
+				D232C5251FD0F199005E0FDC /* se_maoudamashii_system27.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +246,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D232C5271FD0F199005E0FDC /* se_maoudamashii_system27.mp3 in Resources */,
 				D20E68471FC1686400BA366F /* LaunchScreen.storyboard in Resources */,
+				D232C5281FD0F199005E0FDC /* se_maoudamashii_system23.mp3 in Resources */,
 				D20E68441FC1686400BA366F /* Assets.xcassets in Resources */,
 				D20E68421FC1686400BA366F /* Main.storyboard in Resources */,
 			);
@@ -259,7 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20E683F1FC1686400BA366F /* ViewController.swift in Sources */,
+				D20E686B1FC1696000BA366F /* QRCodeViewController.swift in Sources */,
 				D20E683D1FC1686400BA366F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9JWW8S5LM7;
 				INFOPLIST_FILE = HachimantaiHotSpringAppSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.takahashi.HachimantaiHotSpringAppSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9JWW8S5LM7;
 				INFOPLIST_FILE = HachimantaiHotSpringAppSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.takahashi.HachimantaiHotSpringAppSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
