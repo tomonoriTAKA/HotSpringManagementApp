@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40F77F6FDD432D79FE81FCE4 /* Pods_HachimantaiHotSpringAppSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70BCFA68CBDC73D04863F00F /* Pods_HachimantaiHotSpringAppSample.framework */; };
+		A4B1CE8FC668CFF365DDD8DE /* Pods_HachimantaiHotSpringAppSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33FB5F84EA979766D266154 /* Pods_HachimantaiHotSpringAppSampleUITests.framework */; };
+		D1B5FA1006CFDEACA5B84FA2 /* Pods_HachimantaiHotSpringAppSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B07E3415E712A92B352152 /* Pods_HachimantaiHotSpringAppSampleTests.framework */; };
+		D204680C203FEE8E007A6606 /* decision2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D204680B203FEE8D007A6606 /* decision2.mp3 */; };
 		D20E683D1FC1686400BA366F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E683C1FC1686400BA366F /* AppDelegate.swift */; };
 		D20E68421FC1686400BA366F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E68401FC1686400BA366F /* Main.storyboard */; };
 		D20E68441FC1686400BA366F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20E68431FC1686400BA366F /* Assets.xcassets */; };
@@ -14,8 +18,9 @@
 		D20E68521FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E68511FC1686400BA366F /* HachimantaiHotSpringAppSampleTests.swift */; };
 		D20E685D1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E685C1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift */; };
 		D20E686B1FC1696000BA366F /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E686A1FC1696000BA366F /* QRCodeViewController.swift */; };
-		D232C5271FD0F199005E0FDC /* system2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D232C5251FD0F199005E0FDC /* system2.mp3 */; };
-		D232C5281FD0F199005E0FDC /* system1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D232C5261FD0F199005E0FDC /* system1.mp3 */; };
+		D24F7BD520224F380062ADAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D24F7BD420224F370062ADAC /* GoogleService-Info.plist */; };
+		D24F7BD620224F380062ADAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D24F7BD420224F370062ADAC /* GoogleService-Info.plist */; };
+		D24F7BD720224F380062ADAC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D24F7BD420224F370062ADAC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0024C18A0B30793AA26F7484 /* Pods-HachimantaiHotSpringAppSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HachimantaiHotSpringAppSampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleTests/Pods-HachimantaiHotSpringAppSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		0130D9E3B94A9F64574B9751 /* Pods-HachimantaiHotSpringAppSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HachimantaiHotSpringAppSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HachimantaiHotSpringAppSample/Pods-HachimantaiHotSpringAppSample.debug.xcconfig"; sourceTree = "<group>"; };
+		56B07E3415E712A92B352152 /* Pods_HachimantaiHotSpringAppSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HachimantaiHotSpringAppSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ED6188838AFE987CA525C5 /* Pods-HachimantaiHotSpringAppSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HachimantaiHotSpringAppSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-HachimantaiHotSpringAppSample/Pods-HachimantaiHotSpringAppSample.release.xcconfig"; sourceTree = "<group>"; };
+		70BCFA68CBDC73D04863F00F /* Pods_HachimantaiHotSpringAppSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HachimantaiHotSpringAppSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99DA1F515CE83C4F5D0E0D3D /* Pods-HachimantaiHotSpringAppSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HachimantaiHotSpringAppSampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleUITests/Pods-HachimantaiHotSpringAppSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A0A995A8E9312029F2AAA56 /* Pods-HachimantaiHotSpringAppSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HachimantaiHotSpringAppSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleUITests/Pods-HachimantaiHotSpringAppSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B46E38D8F0337302D4E41C16 /* Pods-HachimantaiHotSpringAppSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HachimantaiHotSpringAppSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleTests/Pods-HachimantaiHotSpringAppSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D204680B203FEE8D007A6606 /* decision2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = decision2.mp3; sourceTree = "<group>"; };
 		D20E68391FC1686400BA366F /* HachimantaiHotSpringAppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HachimantaiHotSpringAppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E683C1FC1686400BA366F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20E68411FC1686400BA366F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,8 +63,8 @@
 		D20E685C1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HachimantaiHotSpringAppSampleUITests.swift; sourceTree = "<group>"; };
 		D20E685E1FC1686400BA366F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D20E686A1FC1696000BA366F /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
-		D232C5251FD0F199005E0FDC /* system2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = system2.mp3; sourceTree = "<group>"; };
-		D232C5261FD0F199005E0FDC /* system1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = system1.mp3; sourceTree = "<group>"; };
+		D24F7BD420224F370062ADAC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D33FB5F84EA979766D266154 /* Pods_HachimantaiHotSpringAppSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HachimantaiHotSpringAppSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F77F6FDD432D79FE81FCE4 /* Pods_HachimantaiHotSpringAppSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B5FA1006CFDEACA5B84FA2 /* Pods_HachimantaiHotSpringAppSampleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B1CE8FC668CFF365DDD8DE /* Pods_HachimantaiHotSpringAppSampleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38D101FA31DF109E17935E1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0130D9E3B94A9F64574B9751 /* Pods-HachimantaiHotSpringAppSample.debug.xcconfig */,
+				57ED6188838AFE987CA525C5 /* Pods-HachimantaiHotSpringAppSample.release.xcconfig */,
+				B46E38D8F0337302D4E41C16 /* Pods-HachimantaiHotSpringAppSampleTests.debug.xcconfig */,
+				0024C18A0B30793AA26F7484 /* Pods-HachimantaiHotSpringAppSampleTests.release.xcconfig */,
+				99DA1F515CE83C4F5D0E0D3D /* Pods-HachimantaiHotSpringAppSampleUITests.debug.xcconfig */,
+				9A0A995A8E9312029F2AAA56 /* Pods-HachimantaiHotSpringAppSampleUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B8E4BF264F42134747DD00E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70BCFA68CBDC73D04863F00F /* Pods_HachimantaiHotSpringAppSample.framework */,
+				56B07E3415E712A92B352152 /* Pods_HachimantaiHotSpringAppSampleTests.framework */,
+				D33FB5F84EA979766D266154 /* Pods_HachimantaiHotSpringAppSampleUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D20E68301FC1686300BA366F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +125,8 @@
 				D20E68501FC1686400BA366F /* HachimantaiHotSpringAppSampleTests */,
 				D20E685B1FC1686400BA366F /* HachimantaiHotSpringAppSampleUITests */,
 				D20E683A1FC1686400BA366F /* Products */,
+				38D101FA31DF109E17935E1A /* Pods */,
+				6B8E4BF264F42134747DD00E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +150,7 @@
 				D20E68431FC1686400BA366F /* Assets.xcassets */,
 				D20E68451FC1686400BA366F /* LaunchScreen.storyboard */,
 				D20E68481FC1686400BA366F /* Info.plist */,
+				D24F7BD420224F370062ADAC /* GoogleService-Info.plist */,
 			);
 			path = HachimantaiHotSpringAppSample;
 			sourceTree = "<group>";
@@ -133,8 +176,7 @@
 		D232C5241FD0F144005E0FDC /* Sound */ = {
 			isa = PBXGroup;
 			children = (
-				D232C5261FD0F199005E0FDC /* system1.mp3 */,
-				D232C5251FD0F199005E0FDC /* system2.mp3 */,
+				D204680B203FEE8D007A6606 /* decision2.mp3 */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -146,9 +188,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20E68611FC1686400BA366F /* Build configuration list for PBXNativeTarget "HachimantaiHotSpringAppSample" */;
 			buildPhases = (
+				95BF2CB31A2693F49B2344DD /* [CP] Check Pods Manifest.lock */,
 				D20E68351FC1686400BA366F /* Sources */,
 				D20E68361FC1686400BA366F /* Frameworks */,
 				D20E68371FC1686400BA366F /* Resources */,
+				7C3FD30337674436DC5D03FE /* [CP] Embed Pods Frameworks */,
+				454D10AD99517BE1297C441A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20E68641FC1686400BA366F /* Build configuration list for PBXNativeTarget "HachimantaiHotSpringAppSampleTests" */;
 			buildPhases = (
+				24FF9EC8D0805FEB4588A815 /* [CP] Check Pods Manifest.lock */,
 				D20E68491FC1686400BA366F /* Sources */,
 				D20E684A1FC1686400BA366F /* Frameworks */,
 				D20E684B1FC1686400BA366F /* Resources */,
+				11EF0E529477007DBCD7C761 /* [CP] Embed Pods Frameworks */,
+				034B548AA65F34640624ACFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D20E68671FC1686400BA366F /* Build configuration list for PBXNativeTarget "HachimantaiHotSpringAppSampleUITests" */;
 			buildPhases = (
+				1498210E474B0175A73D87F9 /* [CP] Check Pods Manifest.lock */,
 				D20E68541FC1686400BA366F /* Sources */,
 				D20E68551FC1686400BA366F /* Frameworks */,
 				D20E68561FC1686400BA366F /* Resources */,
+				9AF727A031C8566AAFDAFAD2 /* [CP] Embed Pods Frameworks */,
+				E47280C2C5F06CB0F3B9E73E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,9 +297,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D232C5271FD0F199005E0FDC /* system2.mp3 in Resources */,
+				D24F7BD520224F380062ADAC /* GoogleService-Info.plist in Resources */,
+				D204680C203FEE8E007A6606 /* decision2.mp3 in Resources */,
 				D20E68471FC1686400BA366F /* LaunchScreen.storyboard in Resources */,
-				D232C5281FD0F199005E0FDC /* system1.mp3 in Resources */,
 				D20E68441FC1686400BA366F /* Assets.xcassets in Resources */,
 				D20E68421FC1686400BA366F /* Main.storyboard in Resources */,
 			);
@@ -258,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24F7BD620224F380062ADAC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +317,165 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24F7BD720224F380062ADAC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		034B548AA65F34640624ACFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleTests/Pods-HachimantaiHotSpringAppSampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11EF0E529477007DBCD7C761 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleTests/Pods-HachimantaiHotSpringAppSampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1498210E474B0175A73D87F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HachimantaiHotSpringAppSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24FF9EC8D0805FEB4588A815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HachimantaiHotSpringAppSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		454D10AD99517BE1297C441A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HachimantaiHotSpringAppSample/Pods-HachimantaiHotSpringAppSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C3FD30337674436DC5D03FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HachimantaiHotSpringAppSample/Pods-HachimantaiHotSpringAppSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HachimantaiHotSpringAppSample/Pods-HachimantaiHotSpringAppSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95BF2CB31A2693F49B2344DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HachimantaiHotSpringAppSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF727A031C8566AAFDAFAD2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleUITests/Pods-HachimantaiHotSpringAppSampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E47280C2C5F06CB0F3B9E73E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleUITests/Pods-HachimantaiHotSpringAppSampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D20E68351FC1686400BA366F /* Sources */ = {
@@ -440,6 +647,7 @@
 		};
 		D20E68621FC1686400BA366F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0130D9E3B94A9F64574B9751 /* Pods-HachimantaiHotSpringAppSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -456,6 +664,7 @@
 		};
 		D20E68631FC1686400BA366F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57ED6188838AFE987CA525C5 /* Pods-HachimantaiHotSpringAppSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +681,7 @@
 		};
 		D20E68651FC1686400BA366F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B46E38D8F0337302D4E41C16 /* Pods-HachimantaiHotSpringAppSampleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +699,7 @@
 		};
 		D20E68661FC1686400BA366F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0024C18A0B30793AA26F7484 /* Pods-HachimantaiHotSpringAppSampleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +717,7 @@
 		};
 		D20E68681FC1686400BA366F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DA1F515CE83C4F5D0E0D3D /* Pods-HachimantaiHotSpringAppSampleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +734,7 @@
 		};
 		D20E68691FC1686400BA366F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0A995A8E9312029F2AAA56 /* Pods-HachimantaiHotSpringAppSampleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

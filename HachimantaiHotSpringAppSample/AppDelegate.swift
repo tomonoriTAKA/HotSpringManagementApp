@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        
+        // UserDefaultsを使ってフラグを保持する
+        let userDefault = UserDefaults.standard
+        // "firstLaunch"をキーに、Bool型の値を保持する
+        let dict = ["firstLaunch": true]
+        // デフォルト値登録
+        // ※すでに値が更新されていた場合は、更新後の値のままになる
+        userDefault.register(defaults: dict)
+        
+        // "firstLaunch"に紐づく値がtrueなら(=初回起動)、値をfalseに更新して処理を行う
+        if userDefault.bool(forKey: "firstLaunch") {
+            userDefault.set(false, forKey: "firstLaunch")
+            print("初回起動の時だけ呼ばれるよ")
+        }
+        
+        print("初回起動じゃなくても呼ばれるアプリ起動時の処理だよ")
+        
+        
         return true
     }
 

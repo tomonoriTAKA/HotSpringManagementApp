@@ -1,0 +1,6 @@
+framework module Pods_HachimantaiHotSpringAppSampleUITests {
+  umbrella header "Pods-HachimantaiHotSpringAppSampleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
