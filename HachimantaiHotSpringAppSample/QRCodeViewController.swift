@@ -9,7 +9,6 @@
 import UIKit
 import AVFoundation
 import Firebase
-import SwiftyJSON
 
 class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
@@ -70,6 +69,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.frame = previewView.layer.bounds
         previewLayer.videoGravity = .resizeAspectFill
+        
         previewView.layer.addSublayer(previewLayer)
         
         // どの範囲を解析するか設定する
@@ -215,6 +215,45 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         let dateString = formatter2.string(from: now)
         return dateString
     }
+    
+     /*
+     *** 画面の向きに合わせてカメラの向きを変える実装
+      */
+    
+    //端末の向きを検出
+    func appOrientation() -> UIInterfaceOrientation {
+        return UIApplication.shared.statusBarOrientation
+    }
+    
+    // UIInterfaceOrientation -> AVCaptureVideoOrientationにConvert
+    //今回はlandscapeLeftかlandscapeRightのみ
+    func convertUIOrientationToVideoOrientation(UIorientation: () -> UIInterfaceOrientation) -> AVCaptureVideoOrientation? {
+        let v = UIorientation()
+        switch  v {
+        case UIInterfaceOrientation.unknown:
+            return nil
+        default:
+            return ([UIInterfaceOrientation.landscapeLeft: AVCaptureVideoOrientation.landscapeLeft,
+                     UIInterfaceOrientation.landscapeRight: AVCaptureVideoOrientation.landscapeRight
+            ])[v]
+        }
+    }
+
+    //画面の回転にも対応したい時は viewWillTransitionToSize で同じく向きを教える。
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(
+            alongsideTransition: nil,
+            completion: {(UIViewControllerTransitionCoordinatorContext) in
+                if let orientation = self.convertUIOrientationToVideoOrientation(UIorientation: {return self.appOrientation()}){
+                    self.previewLayer.connection?.videoOrientation = orientation
+                    //previewViewのサイズを再設定
+                    self.previewLayer.frame = self.previewView.bounds
+                }
+        })
+    }
+    
+    
 }
     /*
     // MARK: - Navigation
