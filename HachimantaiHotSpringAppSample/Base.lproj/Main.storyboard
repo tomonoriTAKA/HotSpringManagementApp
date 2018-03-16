@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCq-JA-b6R">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCq-JA-b6R">
                                 <rect key="frame" x="20" y="100" width="627" height="255"/>
                                 <color key="backgroundColor" red="0.94634553040000002" green="0.70025119199999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xCq-JA-b6R" firstAttribute="top" secondItem="pr9-XR-MpY" secondAttribute="bottom" constant="30" id="6la-IK-erZ"/>
                             <constraint firstItem="pr9-XR-MpY" firstAttribute="leading" secondItem="mzr-yU-mY0" secondAttribute="leading" constant="20" id="JSN-TB-8nT"/>

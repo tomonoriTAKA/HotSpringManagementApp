@@ -67,13 +67,25 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         
         //preview
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        previewLayer.frame = previewView.layer.bounds
+        previewLayer.frame = previewView.bounds
         previewLayer.videoGravity = .resizeAspectFill
+        
+        //端末の向きを確認してカメラの向きを設定
+        switch  appOrientation() {
+        case .landscapeLeft:
+            previewLayer.connection?.videoOrientation = .landscapeLeft
+        case .landscapeRight:
+            previewLayer.connection?.videoOrientation = .landscapeRight
+        default:
+            break
+        }
+        
         
         previewView.layer.addSublayer(previewLayer)
         
         // どの範囲を解析するか設定する
         metadataOutput.rectOfInterest = previewView.layer.bounds
+        
         
         //start
         captureSession.startRunning()
