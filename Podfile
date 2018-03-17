@@ -9,7 +9,9 @@ target 'HachimantaiHotSpringAppSample' do
 
   target 'HachimantaiHotSpringAppSampleTests' do
     inherit! :search_paths
+    pod 'Firebase/Database'
     # Pods for testing
+    
   end
 
   target 'HachimantaiHotSpringAppSampleUITests' do

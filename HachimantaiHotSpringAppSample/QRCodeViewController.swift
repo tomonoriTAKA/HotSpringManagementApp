@@ -12,10 +12,14 @@ import Firebase
 
 class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
+    //カメラで撮影したものをプレビューする
     @IBOutlet weak var previewView: UIView!
+    
+    @IBOutlet weak var borderView: UIView!
     
     
     let facilityNum = 0 //施設番号
+
     var dataNum = 0 //データの番号
     var nowDate = "" //日時
     var DBRef: DatabaseReference!
@@ -23,12 +27,24 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     var audioPlayer: AVAudioPlayer = AVAudioPlayer()
+    
     @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         DBRef = Database.database().reference()
+
+        
+        //setup sound
+        setupSE()
+
+        beginSession()
+        
+        
+    }
+    
+    func beginSession() {
         
         //session
         captureSession = AVCaptureSession()
@@ -52,6 +68,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         }
         
         
+        
         //output
         let metadataOutput = AVCaptureMetadataOutput()
         
@@ -65,10 +82,17 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             return
         }
         
+        
         //preview
-        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        previewLayer.frame = previewView.bounds
-        previewLayer.videoGravity = .resizeAspectFill
+            previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+            
+            previewLayer.frame = view.bounds
+            previewLayer.videoGravity = .resizeAspectFill
+            view.layer.addSublayer(previewLayer)
+        
+        print("subviewの数は\(previewView.subviews.count)")
+        
+        
         
         //端末の向きを確認してカメラの向きを設定
         switch  appOrientation() {
@@ -81,18 +105,22 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         }
         
         
-        previewView.layer.addSublayer(previewLayer)
+        //枠線等を表示する
+        borderView.layer.borderColor = UIColor.red.cgColor
+        borderView.layer.borderWidth = 5.0
         
+        self.view.bringSubview(toFront: previewView)
+        self.view.bringSubview(toFront: resultLabel)
+        self.view.bringSubview(toFront: borderView)
+
         // どの範囲を解析するか設定する
         metadataOutput.rectOfInterest = previewView.layer.bounds
-        
         
         //start
         captureSession.startRunning()
         
-        //setup sound
-        setupSE()
     }
+    
     
     //failed alert
     func failed() {
@@ -149,6 +177,13 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 //                found(code: stringValue)
                 //ラベルに読み取り結果を表示
                 resultLabel.text = convertValue
+    
+    
+                borderView.layer.borderColor = UIColor.green.cgColor
+    
+                //borderの色をリセット
+                startTimerForBorderReset()
+    
                 //Firebaseにpost
                 postDataToFirebase(stringValue: convertValue, reference: DBRef)
             }
@@ -260,10 +295,21 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                 if let orientation = self.convertUIOrientationToVideoOrientation(UIorientation: {return self.appOrientation()}){
                     self.previewLayer.connection?.videoOrientation = orientation
                     //previewViewのサイズを再設定
-                    self.previewLayer.frame = self.previewView.bounds
+                    self.previewLayer.frame = self.view.bounds
                 }
         })
     }
+    
+    
+    //borderの色を１秒後にredにするメソッド
+    func startTimerForBorderReset() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
+            if let borderLineView = self.borderView {
+                borderLineView.layer.borderColor = UIColor.red.cgColor
+            }
+        }
+    }
+    
     
     
 }
