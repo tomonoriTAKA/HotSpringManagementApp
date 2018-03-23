@@ -18,7 +18,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     @IBOutlet weak var borderView: UIView!
     
     
-    let facilityNum = 0 //施設番号
+    private var facilityNum = 0 //施設番号
 
     var dataNum = 0 //データの番号
     var nowDate = "" //日時
@@ -33,13 +33,29 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DBRef = Database.database().reference()
-
+        let userDefaults = UserDefaults.standard
         
-        //setup sound
-        setupSE()
-
-        beginSession()
+        
+        //userDefaultにちゃんと中身(facilityNumber)があるかチェック
+        if let facilityNumber = userDefaults.object(forKey: "facilityNumber") {
+            
+            facilityNum = facilityNumber as! Int
+            
+            DBRef = Database.database().reference()
+            
+            
+            //setup sound
+            setupSE()
+            
+            beginSession()
+            
+        } else {
+            
+            print(Error.self)
+            
+        }
+        
+        
         
         
     }

@@ -11,7 +11,7 @@
 		A4B1CE8FC668CFF365DDD8DE /* Pods_HachimantaiHotSpringAppSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33FB5F84EA979766D266154 /* Pods_HachimantaiHotSpringAppSampleUITests.framework */; };
 		D1B5FA1006CFDEACA5B84FA2 /* Pods_HachimantaiHotSpringAppSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B07E3415E712A92B352152 /* Pods_HachimantaiHotSpringAppSampleTests.framework */; };
 		D204680C203FEE8E007A6606 /* decision2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D204680B203FEE8D007A6606 /* decision2.mp3 */; };
-		D204680E205507B9007A6606 /* onlyOnceQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D204680D205507B9007A6606 /* onlyOnceQuestion.swift */; };
+		D20468122063813E007A6606 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20468112063813E007A6606 /* InitialViewController.swift */; };
 		D20E683D1FC1686400BA366F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20E683C1FC1686400BA366F /* AppDelegate.swift */; };
 		D20E68421FC1686400BA366F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20E68401FC1686400BA366F /* Main.storyboard */; };
 		D20E68441FC1686400BA366F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20E68431FC1686400BA366F /* Assets.xcassets */; };
@@ -51,7 +51,7 @@
 		9A0A995A8E9312029F2AAA56 /* Pods-HachimantaiHotSpringAppSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HachimantaiHotSpringAppSampleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleUITests/Pods-HachimantaiHotSpringAppSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B46E38D8F0337302D4E41C16 /* Pods-HachimantaiHotSpringAppSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HachimantaiHotSpringAppSampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HachimantaiHotSpringAppSampleTests/Pods-HachimantaiHotSpringAppSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D204680B203FEE8D007A6606 /* decision2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = decision2.mp3; sourceTree = "<group>"; };
-		D204680D205507B9007A6606 /* onlyOnceQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlyOnceQuestion.swift; sourceTree = "<group>"; };
+		D20468112063813E007A6606 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		D20E68391FC1686400BA366F /* HachimantaiHotSpringAppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HachimantaiHotSpringAppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20E683C1FC1686400BA366F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D20E68411FC1686400BA366F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -147,8 +147,8 @@
 			children = (
 				D232C5241FD0F144005E0FDC /* Sound */,
 				D20E683C1FC1686400BA366F /* AppDelegate.swift */,
-				D204680D205507B9007A6606 /* onlyOnceQuestion.swift */,
 				D20E686A1FC1696000BA366F /* QRCodeViewController.swift */,
+				D20468112063813E007A6606 /* InitialViewController.swift */,
 				D20E68401FC1686400BA366F /* Main.storyboard */,
 				D20E68431FC1686400BA366F /* Assets.xcassets */,
 				D20E68451FC1686400BA366F /* LaunchScreen.storyboard */,
@@ -492,9 +492,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D204680E205507B9007A6606 /* onlyOnceQuestion.swift in Sources */,
 				D20E686B1FC1696000BA366F /* QRCodeViewController.swift in Sources */,
 				D20E683D1FC1686400BA366F /* AppDelegate.swift in Sources */,
+				D20468122063813E007A6606 /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
