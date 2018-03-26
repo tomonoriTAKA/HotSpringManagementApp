@@ -13,6 +13,16 @@ import Firebase
 class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
     //カメラで撮影したものをプレビューする
+    
+    var x: CGFloat!
+    var y: CGFloat!
+    var height: CGFloat!
+    var width: CGFloat!
+    
+    
+    
+    
+    
     @IBOutlet weak var previewView: UIView!
     
     @IBOutlet weak var borderView: UIView!
@@ -32,6 +42,15 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        x = previewView.layer.bounds.minX / view.layer.bounds.width
+        y = previewView.layer.bounds.minY / view.layer.bounds.height
+        width = previewView.layer.bounds.width / view.layer.bounds.width
+        height = previewView.layer.bounds.height / view.layer.bounds.height
+        
+        
+        
+        
         
         let userDefaults = UserDefaults.standard
         
@@ -130,7 +149,8 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         self.view.bringSubview(toFront: borderView)
 
         // どの範囲を解析するか設定する
-        metadataOutput.rectOfInterest = previewView.layer.bounds
+        metadataOutput.rectOfInterest = CGRect(x: x, y: y, width: width, height: height)
+
         
         //start
         captureSession.startRunning()
