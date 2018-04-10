@@ -9,14 +9,27 @@
 import UIKit
 import AVFoundation
 import Firebase
-import SwiftyJSON
 
 class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     
+    //カメラで撮影したものをプレビューする
+    
+    var x: CGFloat!
+    var y: CGFloat!
+    var height: CGFloat!
+    var width: CGFloat!
+    
+    
+    
+    
+    
     @IBOutlet weak var previewView: UIView!
     
+    @IBOutlet weak var borderView: UIView!
     
-    let facilityNum = 0 //施設番号
+    
+    private var facilityNum = 0 //施設番号
+
     var dataNum = 0 //データの番号
     var nowDate = "" //日時
     var DBRef: DatabaseReference!
@@ -24,12 +37,49 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     var audioPlayer: AVAudioPlayer = AVAudioPlayer()
+    
     @IBOutlet weak var resultLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        DBRef = Database.database().reference()
+        x = previewView.layer.bounds.minX / view.layer.bounds.width
+        y = previewView.layer.bounds.minY / view.layer.bounds.height
+        width = previewView.layer.bounds.width / view.layer.bounds.width
+        height = previewView.layer.bounds.height / view.layer.bounds.height
+        
+        
+        
+        
+        
+        let userDefaults = UserDefaults.standard
+        
+        
+        //userDefaultにちゃんと中身(facilityNumber)があるかチェック
+        if let facilityNumber = userDefaults.object(forKey: "facilityNumber") {
+            
+            facilityNum = facilityNumber as! Int
+            
+            DBRef = Database.database().reference()
+            
+            
+            //setup sound
+            setupSE()
+            
+            beginSession()
+            
+        } else {
+            
+            print(Error.self)
+            
+        }
+        
+        
+        
+        
+    }
+    
+    func beginSession() {
         
         //session
         captureSession = AVCaptureSession()
@@ -53,6 +103,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         }
         
         
+        
         //output
         let metadataOutput = AVCaptureMetadataOutput()
         
@@ -66,21 +117,46 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             return
         }
         
-        //preview
-        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        previewLayer.frame = previewView.layer.bounds
-        previewLayer.videoGravity = .resizeAspectFill
-        previewView.layer.addSublayer(previewLayer)
         
+        //preview
+            previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+            
+            previewLayer.frame = view.bounds
+            previewLayer.videoGravity = .resizeAspectFill
+            view.layer.addSublayer(previewLayer)
+        
+        print("subviewの数は\(previewView.subviews.count)")
+        
+        
+        
+        //端末の向きを確認してカメラの向きを設定
+        switch  appOrientation() {
+        case .landscapeLeft:
+            previewLayer.connection?.videoOrientation = .landscapeLeft
+        case .landscapeRight:
+            previewLayer.connection?.videoOrientation = .landscapeRight
+        default:
+            break
+        }
+        
+        
+        //枠線等を表示する
+        borderView.layer.borderColor = UIColor.red.cgColor
+        borderView.layer.borderWidth = 5.0
+        
+        self.view.bringSubview(toFront: previewView)
+        self.view.bringSubview(toFront: resultLabel)
+        self.view.bringSubview(toFront: borderView)
+
         // どの範囲を解析するか設定する
-        metadataOutput.rectOfInterest = previewView.layer.bounds
+        metadataOutput.rectOfInterest = CGRect(x: x, y: y, width: width, height: height)
+
         
         //start
         captureSession.startRunning()
         
-        //setup sound
-        setupSE()
     }
+    
     
     //failed alert
     func failed() {
@@ -137,6 +213,13 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
 //                found(code: stringValue)
                 //ラベルに読み取り結果を表示
                 resultLabel.text = convertValue
+    
+    
+                borderView.layer.borderColor = UIColor.green.cgColor
+    
+                //borderの色をリセット
+                startTimerForBorderReset()
+    
                 //Firebaseにpost
                 postDataToFirebase(stringValue: convertValue, reference: DBRef)
             }
@@ -215,6 +298,56 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         let dateString = formatter2.string(from: now)
         return dateString
     }
+    
+     /*
+     *** 画面の向きに合わせてカメラの向きを変える実装
+      */
+    
+    //端末の向きを検出
+    func appOrientation() -> UIInterfaceOrientation {
+        return UIApplication.shared.statusBarOrientation
+    }
+    
+    // UIInterfaceOrientation -> AVCaptureVideoOrientationにConvert
+    //今回はlandscapeLeftかlandscapeRightのみ
+    func convertUIOrientationToVideoOrientation(UIorientation: () -> UIInterfaceOrientation) -> AVCaptureVideoOrientation? {
+        let v = UIorientation()
+        switch  v {
+        case UIInterfaceOrientation.unknown:
+            return nil
+        default:
+            return ([UIInterfaceOrientation.landscapeLeft: AVCaptureVideoOrientation.landscapeLeft,
+                     UIInterfaceOrientation.landscapeRight: AVCaptureVideoOrientation.landscapeRight
+            ])[v]
+        }
+    }
+
+    //画面の回転にも対応したい時は viewWillTransitionToSize で同じく向きを教える。
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        coordinator.animate(
+            alongsideTransition: nil,
+            completion: {(UIViewControllerTransitionCoordinatorContext) in
+                if let orientation = self.convertUIOrientationToVideoOrientation(UIorientation: {return self.appOrientation()}){
+                    self.previewLayer.connection?.videoOrientation = orientation
+                    //previewViewのサイズを再設定
+                    self.previewLayer.frame = self.view.bounds
+                }
+        })
+    }
+    
+    
+    //borderの色を１秒後にredにするメソッド
+    func startTimerForBorderReset() {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(1)) {
+            if let borderLineView = self.borderView {
+                borderLineView.layer.borderColor = UIColor.red.cgColor
+            }
+        }
+    }
+    
+    
+    
 }
     /*
     // MARK: - Navigation

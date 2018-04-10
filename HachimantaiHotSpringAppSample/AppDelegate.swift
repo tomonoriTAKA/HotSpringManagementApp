@@ -27,10 +27,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // ※すでに値が更新されていた場合は、更新後の値のままになる
         userDefault.register(defaults: dict)
         
+        
         // "firstLaunch"に紐づく値がtrueなら(=初回起動)、値をfalseに更新して処理を行う
         if userDefault.bool(forKey: "firstLaunch") {
-            userDefault.set(false, forKey: "firstLaunch")
             print("初回起動の時だけ呼ばれるよ")
+            
+            userDefault.set(false, forKey: "firstLaunch")
+            
+            //windowを生成
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            
+            //storyboardをインスタンス化
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+            
+            //InitialViewControllerに飛ばす
+            let initialVC = storyboard.instantiateViewController(withIdentifier: "InitialView") as! InitialViewController
+            
+            self.window?.rootViewController = initialVC
+            
+            //表示
+            self.window?.makeKeyAndVisible()
+            
+        } else {
+            
         }
         
         print("初回起動じゃなくても呼ばれるアプリ起動時の処理だよ")

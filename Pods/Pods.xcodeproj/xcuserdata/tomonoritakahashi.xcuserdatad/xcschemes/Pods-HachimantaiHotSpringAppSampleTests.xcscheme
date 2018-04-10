@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C8F08B768648EB302E4E0FE22403927E"
+               BlueprintIdentifier = "C79B8D9C4E807ED900D7CAFF499AFFD1"
                BuildableName = "Pods_HachimantaiHotSpringAppSampleTests.framework"
                BlueprintName = "Pods-HachimantaiHotSpringAppSampleTests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C8F08B768648EB302E4E0FE22403927E"
+            BlueprintIdentifier = "C79B8D9C4E807ED900D7CAFF499AFFD1"
             BuildableName = "Pods_HachimantaiHotSpringAppSampleTests.framework"
             BlueprintName = "Pods-HachimantaiHotSpringAppSampleTests"
             ReferencedContainer = "container:Pods.xcodeproj">
